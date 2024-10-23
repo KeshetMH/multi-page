@@ -1,0 +1,144 @@
+.topbar {
+    background-color: rgb(146, 191, 113);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    font-family: fantasy;
+    padding: 0px 8px;
+}
+
+body {
+    background-color: beige;
+    margin: 0px;
+
+}
+
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    margin: 0.4em;
+}
+
+.background {
+    background-image: url("./images/greentealeaf.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: monospace;
+    font-size: xx-large;
+    color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+    
+}
+
+.background a {
+    background-color: rgb(18, 135, 96);
+    background-size: 3em;
+    border-color: black;
+    text-decoration: none;
+    color: white;
+    margin: 45px;
+    border-radius: 7px;
+
+}
+
+.h1 {
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+
+p {
+    font-size: 21px;
+    font-family: cursive;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5vh;
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+#fullscreen {
+    width: 100%;
+    margin-top: 30px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.shortscreen {
+    margin: 2%;
+   text-align: center;
+}
+
+.topbottom {
+    text-decoration: none;
+    color: #7B3289;
+    font-family: math;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+    margin-top: 10px;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vh;
+    margin-top: 10px;
+}
+
+footer {
+    background-color:  rgb(146, 191, 113);
+    width: 100%;
+    font-family: fantasy;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footerlinks {
+    text-decoration: none;
+    color: #7B3289;
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+
+footer p {
+    text-align: center;
+}
+
+/* for screen less than 800px */
+@media all and (max-width: 800px) {
+    .grid, .grid2, .grid3 {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+/* for screen less than 460px */
+@media all and (max-width: 460px) {
+    .grid, .grid2, .grid3 {
+        grid-template-columns: 1fr;
+    }
+}
